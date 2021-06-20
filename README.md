@@ -1,4 +1,4 @@
-# Project 3 - *Name of App Here*
+# Project 3 - *FBU Twitter*
 
 **Name of your app** is a basic twitter app to read and compose tweets the [Twitter API](https://apps.twitter.com/).
 
