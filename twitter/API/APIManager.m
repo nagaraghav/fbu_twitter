@@ -31,18 +31,18 @@
 
      NSString *path = [[NSBundle mainBundle] pathForResource: @"Keys" ofType: @"plist"];
      NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile: path];
-     NSString *consumerSecret = [dict objectForKey: @"consumer_Secret"];
-     NSString *consumerKey= [dict objectForKey: @"consumer_Key"];
+     NSString *consumerSecret = [dict objectForKey: @"consumer_secret"];
+     NSString *consumerKey= [dict objectForKey: @"consumer_key"];
 
     
     NSURL *baseURL = [NSURL URLWithString:baseURLString];
     NSString *key = consumerKey;
     NSString *secret = consumerSecret;
     // Check for launch arguments override
-    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"consumer-key"]) {
-        key = [[NSUserDefaults standardUserDefaults] stringForKey:@"consumer-key"];
-    }
-  
+//    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"consumer-key"]) {
+//        key = [[NSUserDefaults standardUserDefaults] stringForKey:@"consumer-key"];
+//    }
+//
     
     self = [super initWithBaseURL:baseURL consumerKey:key consumerSecret:secret];
     if (self) {
