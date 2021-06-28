@@ -23,6 +23,7 @@
 		AC1B21ED26753B4100C6C307 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1B21EC26753B4100C6C307 /* ComposeViewController.m */; };
 		AC1B21F7267961B600C6C307 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1B21F6267961B600C6C307 /* ProfileViewController.m */; };
 		AC1B21FB2679620100C6C307 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1B21FA2679620100C6C307 /* DetailViewController.m */; };
+		ACFDA7A3268A20E50037350A /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACFDA7A2268A20E50037350A /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		AC1B21F6267961B600C6C307 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		AC1B21F92679620100C6C307 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		AC1B21FA2679620100C6C307 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		ACFDA7A2268A20E50037350A /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				6AD278E320BC4B970085BC29 /* LaunchScreen.storyboard */,
 				6AD278E620BC4B970085BC29 /* Info.plist */,
 				6AD278E720BC4B970085BC29 /* main.m */,
+				ACFDA7A2268A20E50037350A /* Keys.plist */,
 			);
 			path = twitter;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFDA7A3268A20E50037350A /* Keys.plist in Resources */,
 				6AD278E520BC4B970085BC29 /* LaunchScreen.storyboard in Resources */,
 				6AD278E220BC4B970085BC29 /* Assets.xcassets in Resources */,
 				6AD278E020BC4B950085BC29 /* Main.storyboard in Resources */,

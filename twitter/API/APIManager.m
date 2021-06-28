@@ -10,9 +10,6 @@
 #import "Tweet.h"
 #import "User.h"
 
-static NSString * const baseURLString = @"https://api.twitter.com";
-static NSString * const consumerKey = @"raWBFQLvRBIOfBhXaXnk26sab";// Enter your consumer key here
-static NSString * const consumerSecret = @"eYWpwI4Z1F1XsvkhJs2s82YtAOdqcAatoxVvt6uosqKTHCUX1w"; // Enter your consumer secret here
 
 @interface APIManager()
 
@@ -30,6 +27,13 @@ static NSString * const consumerSecret = @"eYWpwI4Z1F1XsvkhJs2s82YtAOdqcAatoxVvt
 }
 
 - (instancetype)init {
+     NSString * const baseURLString = @"https://api.twitter.com";
+
+     NSString *path = [[NSBundle mainBundle] pathForResource: @"Keys" ofType: @"plist"];
+     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile: path];
+     NSString *consumerSecret = [dict objectForKey: @"consumer_Secret"];
+     NSString *consumerKey= [dict objectForKey: @"consumer_Key"];
+
     
     NSURL *baseURL = [NSURL URLWithString:baseURLString];
     NSString *key = consumerKey;
